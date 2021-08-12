@@ -212,7 +212,7 @@ export class BinLocationsComponent implements OnInit {
               this.totalProducts = 2;
               this.searchSKUFocused = false;
               this.foundSKU = true;
-              this.toastr.error('Found duplicate SKU in database, please make SKUs unique before updating bin locations', 'Duplicate SKU');
+              // this.toastr.error('Found duplicate SKU in database, please make SKUs unique before updating bin locations', 'Duplicate SKU');
             }
             else {
               this.toastr.error('Couldn\'t find SKU ' + this.searchSKUText + ' in database, try syncing products', 'SKU not found');
